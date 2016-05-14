@@ -3,16 +3,16 @@
 
 /* Árvore */
 struct tree {
-    unsigned int tKey;
-    struct tree *tLeft, *tRight;
-    unsigned int tSize;
+  unsigned int tKey;
+  struct tree *tLeft, *tRight;
+  unsigned int tSize;
 };
 
 /* Floresta (árvore de árvores) */
 struct jungle {
-    unsigned int jKey, jCount;
-    struct tree **jTree;
-    struct jungle *jParent, *jLeft, *jRight;
+  unsigned int jKey, jCount;
+  struct tree **jTree;
+  struct jungle *jParent, *jLeft, *jRight;
 };
 
 /* Mescla duas listas de árvores de dois nodos */
