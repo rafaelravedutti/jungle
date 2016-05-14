@@ -1,0 +1,73 @@
+    Trabalho de Algoritmo e Estruturas de Dados III
+
+    Copyright(C) 2014   Rafael Ravedutti Lucio Machado - GRR20135958
+                        Gabriel Moro Sabedotti Chemim - GRR20131671
+
+    Este programa realiza operações com coleções de conjuntos. Após cada
+    operação, um caractere '0' é indicado seu fim. No caso de erro, um
+    caractere 'E' é mostrado indicando o erro. Dentre as operações 
+    válidas estão:
+
+    - Inserir (+): Esta operação insere um conjunto na coleção. Nesta operação
+    ocorrerá erro se o conjunto já existir na coleção.
+
+    - Remove (-): Esta operação remove um conjunto na coleção. Nesta operação
+    ocorrerá erro caso o conjunto não existe na coleção.
+
+    - Busca (=): Esta operação irá buscar um conjunto na coleção. Caso ele
+    não exista, o caractere de erro ('E') é mostrado.
+
+    - Listagem (*): Esta operação irá listar todos os conjuntos existentes
+    na coleção lexicograficamente (ou seja, do menor para o maior).
+
+    - Remove superconjuntos (/): Esta operação irá remover todos os superconjuntos
+    da coleção que são superconjuntos do conjunto indicado. Caso nenhum conjunto
+    seja removido, é mostrado o caractere de erro ('E').
+
+    - Subconjuntos (<): Mostra todos os conjuntos da coleção que são subconjuntos
+    do conjunto indicado.
+
+    - Superconjuntos (>): Mostra todos os conjuntos da coleção que são superconjuntos
+    do conjunto indicado.
+
+=========================================================================================
+
+    Todo conjunto é exibido na forma "s a0 a1 a2 ... an", onde s representa o tamanho
+    do conjunto e a0, a1, ..., an são os elementos deste conjunto. Como por exemplo:
+
+    6 1 2 3 4 5 6 -> Conjunto de tamanho 6 com os elementos 1, 2, 3, 4, 5 e 6
+
+    3 10 1024 2048 -> Conjunto de tamanho 3 com os elementos 10, 1024 e 2048
+
+    Assim, uma operação é da forma:
+
+    op conjunto
+
+    Onde op representa o caractere da operação (+, -, =, *, /, < ou >) e conjunto
+    é o conjunto usado nesta operação (na operação * não é necessário o conjunto).
+    Como por exemplo:
+
+    + 4 1 2 6 8 -> Adiciona o conjunto de tamanho 4 com os elementos 1, 2, 6 e 8
+                   na coleção
+
+    > 3 2 4 6 -> Imprime todos superconjuntos do conjunto de tamanho 3 com os
+                 elementos 2, 4 e 6
+
+=========================================================================================
+
+    Arquivos do programa:
+
+    jungle.h: contém os cabeçalhos das funções para manipular florestas (árvores de
+              árvores), no caso árvores de conjuntos e as estruturas de dados de
+              árvores e da floresta.
+
+    jungle.c: contém as funções para manipular florestas (árvores de árvores), no caso
+              árvores de conjuntos.
+
+    tree.h: contém os cabeçalhos das funções para manipular árvores (conjuntos).
+
+    tree.c: contém as funções para manipular árvores (conjuntos).
+
+    main.c: arquivo principal do programa.
+
+    Makefile: contêm as instruções para compilar e linkar o programa.
